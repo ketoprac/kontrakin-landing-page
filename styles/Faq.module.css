@@ -6,8 +6,21 @@
 .header {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+.header > h1 {
+  margin-bottom: 16px;
+}
+
+.header > ul > li {
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  text-decoration: underline #000 dotted;
 }
 
 .ball {
@@ -30,25 +43,6 @@
   border-radius: 50%;
   background: linear-gradient(#e23e57, #f07b3f);
 }
-
-.header__left {
-  max-width: 480px;
-}
-
-.header__left > h1 {
-  color: #212121;
-  margin-bottom: 8px;
-}
-
-.header__left > p {
-  color: #212121;
-  text-align: justify;
-  margin-bottom: 16px;
-}
-
-.header__right {
-  min-width: 500px;
-} 
 
 .buttonPrimary {
   cursor: pointer;

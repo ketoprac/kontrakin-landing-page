@@ -1,10 +1,12 @@
 .container {
-  min-height: 80vh;
+  overflow: hidden;
+  height: 80vh;
   margin: 64px 128px;
 }
 
 .header {
   display: flex;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
@@ -47,6 +49,7 @@
 }
 
 .header__right {
+  margin-top: -64px;
   min-width: 500px;
 } 
 
@@ -60,6 +63,7 @@
   text-decoration: none;
   display: inline-block;
   border-radius: 6px;
+  width: 100%;
 }
 
 .buttonPrimary:hover {
@@ -70,12 +74,23 @@
   pointer-events: none;
 }
 
-.playstore {
-  display: flex;
-  justify-content: center;
-  min-height: 10vh;
+.contactForm {
+ display: flex;
+ flex-direction: column; 
+ height: 480px;
+ width: 480px;
+ gap: 8px;
 }
 
-.playstoreButton {
-  cursor: pointer;
+.contactForm > input {
+  background-color: whitesmoke;
+  padding: 16px 8px;
+  border: none;
+}
+
+.contactForm > textarea {
+  background-color: whitesmoke;
+  height: 240px;
+  padding: 16px 8px;
+  border: none;
 }
